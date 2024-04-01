@@ -1,0 +1,7 @@
+<h1>List of Employees</h1>
+
+<ul class="list-group">
+    <li style="cursor:pointer;" (click)="EmpClick(employee)" [class.selected]="isSelected(employee)" class="list-group-item" *ngFor="let employee of MyEmployees">
+        {{employee.id}} - {{employee.name}}
+    </li>
+</ul>
